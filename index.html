@@ -1,10 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-<title>Portfolio welcome</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio ของ โรจน์ศักดิ์ อุดมสิทธิพัฒนา</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body bgcolor="blue">
-<h1>หน้าหลัก</h1>
-<a href="personal.html">ประวัติส่วนตัว</a>
+<body>
+
+<canvas id="starfield"></canvas>
+
+<nav class="topnav">
+  <div class="brand">
+    <span class="brand-badge">T1</span>
+    โรจน์ศักดิ์ อุดมสิทธิพัฒนา
+  </div>
+  <button class="nav-toggle" aria-label="เปิดเมนู">&#9776;</button>
+  <ul class="navlinks">
+    <li><a href="index.html" aria-current="page">หน้าหลัก</a></li>
+    <li><a href="personal.html">ประวัติส่วนตัว</a></li>
+    <li><a href="education.html">ประวัติการศึกษา</a></li>
+    <li><a href="activities.html">ผลงาน</a></li>
+    <li><a href="contact.html">ติดต่อ</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="hero">
+    <div>
+      <span class="kicker">Student Portfolio &middot; Mission Log 01</span>
+      <h1>Portfolio of <br><span class="accent">เต็งหนึ่ง</span></h1>
+      <!-- แก้ระดับชั้น/รายละเอียดแนะนำตัวตรงนี้ -->
+      <p class="lede">นักเรียนชั้นมัธยมศึกษาปีที่ ... (แก้ไขตรงนี้) เว็บไซต์นี้รวบรวมประวัติส่วนตัว ประวัติการศึกษา และผลงานไว้ในที่เดียว เพื่อใช้แนะนำตัวสำหรับการศึกษาต่อและโอกาสต่างๆ เหมือนบันทึกภารกิจของนักบินอวกาศดวงหนึ่ง ที่กำลังออกเดินทางสู่เป้าหมายถัดไป</p>
+      <div class="hero-cta">
+        <a href="personal.html" class="btn btn-solid">ดูประวัติส่วนตัว</a>
+        <a href="contact.html" class="btn btn-ghost">ช่องทางการติดต่อ</a>
+      </div>
+    </div>
+
+    <div class="id-card">
+      <div class="id-card-top">
+        <span class="school">STUDENT MISSION BADGE</span>
+        <span class="gold-dot"></span>
+      </div>
+      <div class="id-card-body">
+        <div class="id-photo">
+          <span class="ring"></span>
+          <span class="ring2"></span>
+          <span class="core">
+            <!-- เปลี่ยนเป็น <img src="images/profile-small.jpg" alt="รูปโรจน์ศักดิ์ อุดมสิทธิพัฒนา"> เมื่อมีรูป -->
+            รูปนักเรียน
+          </span>
+        </div>
+        <div class="id-info">
+          <div class="name">โรจน์ศักดิ์ อุดมสิทธิพัฒนา</div>
+          <div class="role">ชั้นมัธยมศึกษาปีที่ ... (แก้ไขตรงนี้)</div>
+          <div class="role">ชื่อเล่น: เต็งหนึ่ง</div>
+        </div>
+      </div>
+      <div class="id-card-strip"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="grid-links">
+      <a class="link-card" href="personal.html">
+        <span class="num">01</span>
+        <h3>ประวัติส่วนตัว</h3>
+        <p>ข้อมูลทั่วไปและรูปภาพของผม</p>
+      </a>
+      <a class="link-card" href="education.html">
+        <span class="num">02</span>
+        <h3>ประวัติการศึกษา</h3>
+        <p>เส้นทางการเรียนตั้งแต่อดีตถึงปัจจุบัน</p>
+      </a>
+      <a class="link-card" href="activities.html">
+        <span class="num">03</span>
+        <h3>ผลงาน</h3>
+        <p>ผลงานและกิจกรรมที่เคยทำ</p>
+      </a>
+      <a class="link-card" href="contact.html">
+        <span class="num">04</span>
+        <h3>ติดต่อ</h3>
+        <p>ช่องทางการติดต่อผม</p>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>&copy; 2026 โรจน์ศักดิ์ อุดมสิทธิพัฒนา — Portfolio Website</footer>
+
+<script src="starfield.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
